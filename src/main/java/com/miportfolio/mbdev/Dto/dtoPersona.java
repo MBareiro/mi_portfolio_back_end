@@ -1,7 +1,7 @@
-
 package com.miportfolio.mbdev.Dto;
 
 public class dtoPersona {
+
     private String nombre;
     private String apellido;
     private String descripcion;
@@ -48,6 +48,5 @@ public class dtoPersona {
     public void setImg(String img) {
         this.img = img;
     }
-    
-    
+
 }
