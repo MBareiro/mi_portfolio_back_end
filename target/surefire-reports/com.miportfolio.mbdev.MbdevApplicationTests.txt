@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.miportfolio.mbdev.MbdevApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.719 s - in com.miportfolio.mbdev.MbdevApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.178 s - in com.miportfolio.mbdev.MbdevApplicationTests
