@@ -7,16 +7,14 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Persona {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    
+
     private String nombre;
-
     private String apellido;
-
     private String descripcion;
-    
     private String img;
 
     public Persona() {
@@ -69,9 +67,4 @@ public class Persona {
         this.img = img;
     }
 
-    
-    
-    
-    
-    
 }
