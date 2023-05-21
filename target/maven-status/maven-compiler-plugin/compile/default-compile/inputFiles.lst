@@ -13,6 +13,7 @@ S:\xampp\htdocs\Argentina-Programa\Modulo 3\as\mi_portfolio_back_end\mbdev\mbdev
 S:\xampp\htdocs\Argentina-Programa\Modulo 3\as\mi_portfolio_back_end\mbdev\mbdev\src\main\java\com\miportfolio\mbdev\Security\Controller\AuthController.java
 S:\xampp\htdocs\Argentina-Programa\Modulo 3\as\mi_portfolio_back_end\mbdev\mbdev\src\main\java\com\miportfolio\mbdev\Controller\CExperiencia.java
 S:\xampp\htdocs\Argentina-Programa\Modulo 3\as\mi_portfolio_back_end\mbdev\mbdev\src\main\java\com\miportfolio\mbdev\Security\Entity\Usuario.java
+S:\xampp\htdocs\Argentina-Programa\Modulo 3\as\mi_portfolio_back_end\mbdev\mbdev\src\main\java\com\miportfolio\mbdev\Interface\IPersonaService.java
 S:\xampp\htdocs\Argentina-Programa\Modulo 3\as\mi_portfolio_back_end\mbdev\mbdev\src\main\java\com\miportfolio\mbdev\Dto\dtoPersona.java
 S:\xampp\htdocs\Argentina-Programa\Modulo 3\as\mi_portfolio_back_end\mbdev\mbdev\src\main\java\com\miportfolio\mbdev\Security\Dto\JwtDto.java
 S:\xampp\htdocs\Argentina-Programa\Modulo 3\as\mi_portfolio_back_end\mbdev\mbdev\src\main\java\com\miportfolio\mbdev\Security\Service\UserDetailsImpl.java
