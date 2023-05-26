@@ -35,7 +35,6 @@ com\miportfolio\mbdev\Service\Seducacion.class
 com\miportfolio\mbdev\Repository\REducacion.class
 com\miportfolio\mbdev\Dto\dtoPersona.class
 com\miportfolio\mbdev\Security\Entity\Usuario.class
-com\miportfolio\mbdev\Interface\IPersonaService.class
 com\miportfolio\mbdev\Repository\IPersonaRepository.class
 com\miportfolio\mbdev\Entity\Experiencia.class
 com\miportfolio\mbdev\Security\Dto\NuevoUsuario.class
