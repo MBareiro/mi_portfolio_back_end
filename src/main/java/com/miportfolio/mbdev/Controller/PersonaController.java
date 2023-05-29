@@ -74,10 +74,10 @@ public class PersonaController {
         personaService.delete(id);
         return new ResponseEntity(HttpStatus.OK);
     }*/
-    
+    /*
     @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody Persona persona){        
         personaService.save(persona);
         return new ResponseEntity(HttpStatus.OK);                
-    }
+    }*/
 }
