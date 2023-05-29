@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -73,21 +74,21 @@ public class PersonaController {
         personaService.delete(id);
         return new ResponseEntity(HttpStatus.OK);
     }*/
-    /*
+    
     @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody dtoPersona dtopersona){
         if(StringUtils.isBlank(dtopersona.getNombre())){
             return new ResponseEntity(HttpStatus.BAD_REQUEST);
         }
-        if(personaService.existsByNombre(dtopersona.getNombre())){
+        if(personaService.existByNombre(dtopersona.getNombre())){
             return new ResponseEntity(HttpStatus.BAD_REQUEST);
         }
         
         Persona persona = new Persona(
-                dtopersona.getNombre(), dtopersona.getDescripcion()
+                dtopersona.getNombre(), dtopersona.getApellido(), dtopersona.getDescripcion(), dtopersona.getImg()
             );
         personaService.save(persona);
         return new ResponseEntity(HttpStatus.OK);
                 
-    }*/
+    }
 }
