@@ -39,34 +39,7 @@ public class PersonaController {
         Persona persona = personaService.getOne(id).get();
         return new ResponseEntity(persona, HttpStatus.OK);
     }
-
-    /*
-    @DeleteMapping("/delete/{id}")
-    public ResponseEntity<?> delete(@PathVariable("id") int id){
-        if(!personaService.existsById(id)){
-            return new ResponseEntity(HttpStatus.NOT_FOUND);
-        }
-        personaService.delete(id);
-        return new ResponseEntity(HttpStatus.OK);
-    }*/
- /*
-    @PostMapping("/create")
-    public ResponseEntity<?> create(@RequestBody dtoPersona dtopersona){
-        if(StringUtils.isBlank(dtopersona.getNombre())){
-            return new ResponseEntity(HttpStatus.BAD_REQUEST);
-        }
-        if(personaService.existsByNombre(dtopersona.getNombre())){
-            return new ResponseEntity(HttpStatus.BAD_REQUEST);
-        }
-        
-        Persona persona = new Persona(
-                dtopersona.getNombre(), dtopersona.getDescripcion()
-            );
-        personaService.save(persona);
-        return new ResponseEntity(HttpStatus.OK);
-                
-    }*/
-
+    
     @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoPersona dtopersona) {
         if (!personaService.existById(id)) {
@@ -90,4 +63,31 @@ public class PersonaController {
 
         return new ResponseEntity(HttpStatus.OK);
     }
+    
+     /*
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<?> delete(@PathVariable("id") int id){
+        if(!personaService.existsById(id)){
+            return new ResponseEntity(HttpStatus.NOT_FOUND);
+        }
+        personaService.delete(id);
+        return new ResponseEntity(HttpStatus.OK);
+    }*/
+    /*
+    @PostMapping("/create")
+    public ResponseEntity<?> create(@RequestBody dtoPersona dtopersona){
+        if(StringUtils.isBlank(dtopersona.getNombre())){
+            return new ResponseEntity(HttpStatus.BAD_REQUEST);
+        }
+        if(personaService.existsByNombre(dtopersona.getNombre())){
+            return new ResponseEntity(HttpStatus.BAD_REQUEST);
+        }
+        
+        Persona persona = new Persona(
+                dtopersona.getNombre(), dtopersona.getDescripcion()
+            );
+        personaService.save(persona);
+        return new ResponseEntity(HttpStatus.OK);
+                
+    }*/
 }
