@@ -76,19 +76,8 @@ public class PersonaController {
     }*/
     
     @PostMapping("/create")
-    public ResponseEntity<?> create(@RequestBody dtoPersona dtopersona){
-        if(StringUtils.isBlank(dtopersona.getNombre())){
-            return new ResponseEntity(HttpStatus.BAD_REQUEST);
-        }
-        if(personaService.existByNombre(dtopersona.getNombre())){
-            return new ResponseEntity(HttpStatus.BAD_REQUEST);
-        }
-        
-        Persona persona = new Persona(
-                dtopersona.getNombre(), dtopersona.getApellido(), dtopersona.getDescripcion(), dtopersona.getImg()
-            );
+    public ResponseEntity<?> create(@RequestBody Persona persona){        
         personaService.save(persona);
-        return new ResponseEntity(HttpStatus.OK);
-                
+        return new ResponseEntity(HttpStatus.OK);                
     }
 }
