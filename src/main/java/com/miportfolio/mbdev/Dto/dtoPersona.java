@@ -1,10 +1,16 @@
 package com.miportfolio.mbdev.Dto;
 
+import jakarta.validation.constraints.NotBlank;
+
 public class dtoPersona {
 
+    @NotBlank
     private String nombre;
+    @NotBlank
     private String apellido;
+    @NotBlank
     private String descripcion;
+    @NotBlank
     private String img;
 
     public dtoPersona() {
@@ -48,5 +54,6 @@ public class dtoPersona {
     public void setImg(String img) {
         this.img = img;
     }
+    
 
 }

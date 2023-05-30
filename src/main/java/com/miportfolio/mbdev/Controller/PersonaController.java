@@ -40,7 +40,7 @@ public class PersonaController {
         Persona persona = personaService.getOne(id).get();
         return new ResponseEntity(persona, HttpStatus.OK);
     }
-    
+
     @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoPersona dtopersona) {
         if (!personaService.existById(id)) {
@@ -64,8 +64,8 @@ public class PersonaController {
 
         return new ResponseEntity(HttpStatus.OK);
     }
-    
-     /*
+
+    /*
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id") int id){
         if(!personaService.existsById(id)){
@@ -74,10 +74,9 @@ public class PersonaController {
         personaService.delete(id);
         return new ResponseEntity(HttpStatus.OK);
     }*/
-    /*
-    @PostMapping("/create")
-    public ResponseEntity<?> create(@RequestBody Persona persona){        
+    @PostMapping("/crear")
+    public String createPersona(@RequestBody Persona persona) {
         personaService.save(persona);
-        return new ResponseEntity(HttpStatus.OK);                
-    }*/
+        return "La persona fue creada correctamente";
+    }
 }
