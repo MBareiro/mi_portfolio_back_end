@@ -74,9 +74,11 @@ public class PersonaController {
         personaService.delete(id);
         return new ResponseEntity(HttpStatus.OK);
     }*/
+    /*
     @PostMapping("/crear")
     public String createPersona(@RequestBody Persona persona) {
         personaService.save(persona);
         return "La persona fue creada correctamente";
-    }
+    }*/
+    
 }
